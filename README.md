@@ -1,4 +1,6 @@
-# uas_prakpbk
+# UAS LAB PBK
+# Nama : Daffa Haykel Putra
+# NPM : 213510226
 
 ## Project setup
 ```
