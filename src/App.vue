@@ -1,7 +1,10 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">Cuaca</router-link> |
+    <router-link to="/lokasi">Lokasi</router-link> |
+    <router-link to="/stopwatch">StopWatch</router-link> |
+    <router-link to="/foto">Foto</router-link> |
+    <router-link to="/bgk">Game Batu Gunting Kertas</router-link>
   </nav>
   <router-view/>
 </template>
@@ -17,14 +20,16 @@
 
 nav {
   padding: 30px;
+  background-color: blue; /* Tambahkan warna latar belakang di sini */
 }
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: white;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: cyan;
 }
 </style>
+

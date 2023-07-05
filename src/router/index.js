@@ -1,21 +1,35 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import Cuaca from '../views/Cuaca.vue'
+import lokasi from '../views/Lokasi.vue'
+import stopwatch from '../views/Stopwatch.vue'
+import foto from '../views/Foto.vue'
+import bgk from '../views/BGK.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: HomeView
+    name: 'cuaca',
+    component: Cuaca
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: function () {
-      return import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-    }
+    path: '/lokasi',
+    name: 'lokasi',
+    component: lokasi
+  },
+  {
+    path: '/stopwatch',
+    name: 'stopwatch',
+    component: stopwatch
+  },
+  {
+    path: '/foto',
+    name: 'foto',
+    component: foto
+  },
+  {
+    path: '/bgk',
+    name: 'bgk',
+    component: bgk
   }
 ]
 
